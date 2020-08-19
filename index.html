@@ -1,3 +1,7 @@
+<html>
+<head>
+	<title>kuyiley</title>
+</head>
 <script src="aframe.min.js"></script>
 <script src="aframe-ar.js"></script>
 <body style='margin : 0px; overflow: hidden;'>
@@ -6,4 +10,12 @@
 		</a-plane>
 		<a-marker-camera preset='hiro'></a-marker-camera>
 	</a-scene>
+	 <audio hidden="" id="audioPlayer" src="hbd.mp3" type ="audio/mp3">your browser does not support Html5</audio>
+	 <script>
+        document.addEventListener("click", function(){
+        document.getElementById("checker").innerHTML = "Audio playing";
+        document.getElementById("audioPlayer").play();
+    });    
+
 </body>
+</html>
